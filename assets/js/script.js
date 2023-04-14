@@ -49,10 +49,14 @@ for (var i = 0; i < materia.length; i++) {
 
 //mostrar promedio en el HTML
 for (var i = 0; i < materia.length; i++) {
+   //se recorre el arreglo de objetos materia
     var notas = materia[i].notas;
+    //se crea una variable que almacena las notas actuales por cada materia
     var promedio = materia[i].promedio;
+    //se crea una variable que almacena el nombre de la materia actual se le aplica toLowerCase 
     var nombreMateria = materia[i].nombre.toLowerCase();
 
+//se asigna el valor de las notas y el promedio a los elementos del HTML
     document.getElementById(nombreMateria + "-nota1").innerHTML = notas[0];
     document.getElementById(nombreMateria + "-nota2").innerHTML = notas[1];
     document.getElementById(nombreMateria + "-nota3").innerHTML = notas[2];
